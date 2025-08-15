@@ -11,11 +11,17 @@ export default function Theme() {
   return (
     <>
       {theme === "dark" ? (
-        <button className={styles.btn} onClick={() => handelLightTheme(theme)}>
+        <button
+          className={styles.btn}
+          onClick={() => handelLightTheme(theme as "dark")}
+        >
           ☀
         </button>
       ) : (
-        <button className={styles.btn} onClick={() => handelDarkTheme(theme)}>
+        <button
+          className={styles.btn}
+          onClick={() => handelDarkTheme(theme as "light")}
+        >
           ☾
         </button>
       )}

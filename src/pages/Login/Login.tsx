@@ -102,9 +102,12 @@ export default function Login() {
         >
           Login
         </Button>
-        <p className={styles.account}>Dont you have an account ? <NavLink to="/register">Create One</NavLink></p>
+        <p className={styles.account}>
+          Dont you have an account ?{" "}
+          <NavLink to="/register">Create One</NavLink>
+        </p>
       </form>
-     
+
       <ToastContainer
         position="top-right"
         autoClose={4000}
@@ -115,7 +118,7 @@ export default function Login() {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme={theme}
+        theme={theme as "dark" | "light"}
       />
     </main>
   );

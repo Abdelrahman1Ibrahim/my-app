@@ -122,7 +122,7 @@ export default function Register() {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme={theme}
+        theme={theme as "dark" | "light"}
       />
     </main>
   );

@@ -42,7 +42,8 @@ body {
   /* Backgrounds */
   --bg-main: var(--color-white);
   --bg-secondary: var(--color-gray);
-  --bg-sidebar: var(--color-navy);
+  /* --bg-sidebar: var(--color-navy); */
+  --above-secondary: #14213d;
 
   /* Text */
   --text-main: var(--color-black);
@@ -71,8 +72,8 @@ body {
   /* Backgrounds */
   --bg-main: var(--color-navy);
   --bg-secondary: var(--color-black);
-  --bg-sidebar: var(--color-black);
-
+  --bg-sidebar: var(--bg-secondary);
+  --above-secondary: #fca311;
   /* Text */
   --text-main: var(--color-white);
   --text-secondary: var(--color-gray);
