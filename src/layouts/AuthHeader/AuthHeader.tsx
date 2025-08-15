@@ -1,5 +1,6 @@
 // components
 import Button from "../../components/Button/Button";
+import Theme from "../../components/Theme/Theme";
 
 // navigation
 import { NavLink, useLocation } from "react-router";
@@ -28,6 +29,7 @@ export default function AuthHeader() {
           <Button type="button" state={!loginActive ? "primary" : "secondary"}>
             <NavLink to="/register">register</NavLink>
           </Button>
+          <Theme />
         </nav>
       </div>
     </header>

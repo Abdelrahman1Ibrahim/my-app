@@ -23,6 +23,7 @@ import styles from "../../sharedStyles/auth.module.css";
 // features
 import { ToastContainer, toast } from "react-toastify";
 import axiosInstance from "../../api/axios";
+import { NavLink } from "react-router";
 
 // context
 import { ThemeContext } from "../../store/ThemeProvider";
@@ -106,7 +107,11 @@ export default function Register() {
         >
           Register
         </Button>
+        <p className={styles.account}>
+          Do you have an account ? <NavLink to="/login">login</NavLink>
+        </p>
       </form>
+
       <ToastContainer
         position="top-right"
         autoClose={4000}

@@ -1,0 +1,5 @@
+.btn {
+  background-color: var(--bg-main);
+  font-size: 14px;
+  color: var(--text-secondary);
+}

@@ -1,5 +1,5 @@
 .main {
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,4 +17,17 @@
   border-radius: 1rem;
   width: 70%;
   max-width: 400px;
+}
+
+.account {
+  font-size: 14px;
+  margin-top: 10px;
+  color: var(--text-secondary);
+}
+.account a {
+  color: var(--color-orange);
+  transition: 0.3s ease-in-out;
+}
+.account a:hover {
+ color: #e28d05;
 }

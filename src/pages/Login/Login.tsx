@@ -6,7 +6,7 @@ import { ILoginProps } from "../../types/index";
 
 // hooks
 import { useForm, SubmitHandler } from "react-hook-form";
-import { useNavigate } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 import { useContext } from "react";
 
 // validation
@@ -102,7 +102,9 @@ export default function Login() {
         >
           Login
         </Button>
+        <p className={styles.account}>Dont you have an account ? <NavLink to="/register">Create One</NavLink></p>
       </form>
+     
       <ToastContainer
         position="top-right"
         autoClose={4000}
