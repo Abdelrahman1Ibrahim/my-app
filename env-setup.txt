@@ -1,0 +1,24 @@
+# Environment Variables Setup Instructions
+
+## Step 1: Create .env.local file
+Create a file named ".env.local" in your project root with the following content:
+
+REACT_APP_STRAPI_URL=http://localhost:1337/api
+REACT_APP_API_URL=http://localhost:3001/api
+REACT_APP_API_KEY=your_api_key_here
+REACT_APP_JWT_SECRET=your_jwt_secret_here
+REACT_APP_AUTH_DOMAIN=localhost
+REACT_APP_DEBUG_MODE=true
+REACT_APP_ENABLE_LOGGING=true
+
+## Step 2: Restart your development server
+After creating .env.local, restart your server:
+npm start
+
+## Step 3: Verify the configuration
+The axios instance will now use the STRAPI_URL from your environment variables.
+
+## Note:
+- All variables must start with REACT_APP_
+- .env.local is not committed to git (safe for secrets)
+- The default STRAPI_URL is http://localhost:1337/api

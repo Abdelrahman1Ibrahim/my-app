@@ -1,13 +1,99 @@
-body {
+/* =====================
+   🎨 Reset
+   ===================== */
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* =====================
+   🎨 Fonts
+   ===================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* =====================
+   🎯 Base Colors
+   ===================== */
+:root {
+  --color-black: #000000;
+  --color-navy: #14213d;
+  --color-orange: #fca311;
+  --color-gray: #e5e5e5;
+  --color-white: #ffffff;
+
+  --color-error: #d90429;
+  --color-error-bg: #ffdad6;
+}
+
+/* =====================
+   🌞 Light Theme
+   ===================== */
+:root {
+  /* Backgrounds */
+  --bg-main: var(--color-white);
+  --bg-secondary: var(--color-gray);
+  --bg-sidebar: var(--color-navy);
+
+  /* Text */
+  --text-main: var(--color-black);
+  --text-secondary: var(--color-navy);
+  --text-invert: var(--color-white);
+
+  /* Buttons */
+  --btn-primary-bg: var(--color-orange);
+  --btn-primary-text: var(--color-black);
+  --btn-secondary-bg: var(--color-gray);
+  --btn-secondary-text: var(--color-black);
+
+  /* Hover */
+  --btn-primary-hover-bg: #e59500;
+  --btn-secondary-hover-bg: #cccccc;
+
+  /* Disabled */
+  --btn-disabled-bg: #bdbdbd;
+  --btn-disabled-text: #6e6e6e;
+}
+
+/* =====================
+   🌙 Dark Theme
+   ===================== */
+:root.dark {
+  /* Backgrounds */
+  --bg-main: var(--color-navy);
+  --bg-secondary: var(--color-black);
+  --bg-sidebar: var(--color-black);
+
+  /* Text */
+  --text-main: var(--color-white);
+  --text-secondary: var(--color-gray);
+  --text-invert: var(--color-black);
+
+  /* Buttons */
+  --btn-primary-bg: var(--color-orange);
+  --btn-primary-text: var(--color-black);
+  --btn-secondary-bg: var(--color-gray);
+  --btn-secondary-text: var(--color-black);
+
+  /* Hover */
+  --btn-primary-hover-bg: #e59500;
+  --btn-secondary-hover-bg: #cccccc;
+
+  /* Disabled */
+  --btn-disabled-bg: #bdbdbd;
+  --btn-disabled-text: #6e6e6e;
+}
+
+/* =====================
+   Global Styles
+   ===================== */
+
+a {
+  list-style: none;
+  text-decoration: none;
 }

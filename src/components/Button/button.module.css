@@ -1,0 +1,35 @@
+button {
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+button.primary {
+  background-color: var(--btn-primary-bg) !important;
+  color: var(--btn-primary-text) !important;
+}
+button.secondary {
+  background-color: var(--btn-secondary-bg) !important;
+  color: var(--btn-secondary-text) !important;
+}
+button.primary:hover {
+  background-color: var(--btn-primary-hover-bg) !important;
+  color: var(--btn-primary-text) !important;
+}
+button.secondary:hover {
+  background-color: var(--btn-secondary-hover-bg) !important;
+}
+
+button:disabled {
+  background-color: var(--btn-disabled-bg) !important;
+  color: var(--btn-disabled-text) !important;
+}
+
+a:-webkit-any-link{
+  color: initial
+}
+

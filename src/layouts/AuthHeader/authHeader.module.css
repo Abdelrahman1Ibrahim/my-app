@@ -1,0 +1,24 @@
+.header {
+  max-width: 70%;
+  margin: 0 auto;
+  background: var(--bg-secondary);
+}
+.logo {
+  font-size: 1.5rem;
+  color: var(--text-main);
+  flex-grow: 1;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  margin-right: 10px;
+}
+.container {
+  margin-inline: 30px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
