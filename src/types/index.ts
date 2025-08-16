@@ -26,3 +26,13 @@ export interface ILoginInput {
   errorMessage?: string;
   autoComplete?: string;
 }
+
+export interface todo {
+  id: string;
+  title: string;
+  description: string;
+  createdAt?: string;
+  updatedAt?: string;
+  status: "NotStarted" | "InProgress" | "Completed";
+  priority?: "Low" | "Moderate" | "High";
+}

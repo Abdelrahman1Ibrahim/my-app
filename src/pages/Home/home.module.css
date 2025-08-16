@@ -1,0 +1,37 @@
+.header h1 {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--color-orange);
+  padding: 10px;
+}
+
+@media (max-width: 991px) {
+  .content {
+    flex-wrap: wrap;
+  }
+}
+.card {
+  background-color: var(--above-secondary);
+  border: 1px solid var(--color-white);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}

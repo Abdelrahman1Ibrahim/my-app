@@ -6,9 +6,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
-  min-height: 100vh ;
-  background-color: var(--bg-main)
+body {
+  min-height: 100vh;
+  background-color: var(--bg-main);
 }
 
 /* =====================
@@ -30,6 +30,11 @@ body {
   --color-orange: #fca311;
   --color-gray: #e5e5e5;
   --color-white: #ffffff;
+  --completed: #06d6a0;
+  --inProgress: #fca311;
+  --notStarted: #ef476f;
+
+  
 
   --color-error: #d90429;
   --color-error-bg: #ffdad6;
@@ -72,7 +77,7 @@ body {
   /* Backgrounds */
   --bg-main: var(--color-navy);
   --bg-secondary: var(--color-black);
-  --bg-sidebar: var(--bg-secondary);
+  /* --bg-sidebar: var(--bg-secondary); */
   --above-secondary: #fca311;
   /* Text */
   --text-main: var(--color-white);

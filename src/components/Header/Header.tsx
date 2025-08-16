@@ -1,16 +1,15 @@
 
 import Theme from "../Theme/Theme";
 import styles from "./Header.module.css";
+import { useSidebar } from "../../store/SidebarContext";
 
-interface HeaderProps {
-  onToggleSidebar: () => void;
-}
+export default function Header() {
+  const { toggleSidebar } = useSidebar();
 
-export default function Header({ onToggleSidebar }: HeaderProps) {
   return (
     <header className={styles.header}>
       <div className={styles.leftSection}>
-        <button className={styles.sidebarToggle} onClick={onToggleSidebar}>
+        <button className={styles.sidebarToggle} onClick={toggleSidebar}>
           ☰
         </button>
         <div className={styles.logo}>

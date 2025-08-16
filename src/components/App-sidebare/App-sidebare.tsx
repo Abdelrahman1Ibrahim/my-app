@@ -2,12 +2,11 @@ import { MENU_ITEMS } from "../../data/Sidebare";
 import Button from "../Button/Button";
 import styles from "./App-sidebare.module.css";
 import { NavLink } from "react-router";
+import { useSidebar } from "../../store/SidebarContext";
 
-interface AppSidebarProps {
-  isOpen: boolean;
-}
+export function AppSidebar() {
+  const { isOpen } = useSidebar();
 
-export function AppSidebar({ isOpen }: AppSidebarProps) {
   const handleLogout = () => {
     // Handle logout logic here
     console.log("Logout clicked");
